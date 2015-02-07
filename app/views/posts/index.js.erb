@@ -1,0 +1,2 @@
+$('#posts').append("<%= j render(partial: 'post', collection: @posts, format: 'html') %>");
+$("#view-more").attr("href", "<%= j posts_path(page: @posts.current_page + 1) %>");
